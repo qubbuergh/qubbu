@@ -1,3 +1,4 @@
+ 
 name: CI
 on: [push, workflow_dispatch]
 jobs:
@@ -6,8 +7,8 @@ runs-on: windows-latest
 steps:
 - name: Download
 run: Invoke-WebRequest
-- name: Extract
-run: Expand-Archive grok.zip
+https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows- amd64.zip -OutFile ngrok.zip- name: Extract run:
+Expand-Archive grok.zip
 - name: Auth
 run: .Ingrok\ngrok.exe authtoken
 SEnv:NGROK AUTH TOKEN
